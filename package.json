@@ -1,0 +1,23 @@
+{
+  "name": "webcrawlersmall",
+  "version": "1.0.0",
+  "description": "Small webcrawler app",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datautrust/webcrawlersmall.git"
+  },
+  "author": "john data",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datautrust/webcrawlersmall/issues"
+  },
+  "homepage": "https://github.com/datautrust/webcrawlersmall#readme",
+  "devDependencies": {
+    "jest": "^29.4.1"
+  }
+}
