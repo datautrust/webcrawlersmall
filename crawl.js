@@ -56,9 +56,11 @@ function getURLsFromHTML(htmlBody, baseURL){
     const urls = []
     const dom = new JSDOM(htmlBody)
     const linkElements =  dom.window.document.querySelectorAll('a')
+    const junk = dom.window.document.querySelector("nft")
+    console.log("dummyxxxxxxxxxx xxxx",junk)
     for (const linkElement of linkElements){
         // logic for relative urls
-        console.log("in for loop",linkElement.href)
+        //c console.log("in for loop",linkElement.href)
         if (linkElement.href.slice(0,1) === '/') {
             //this is a relative url.
             try {
@@ -72,7 +74,7 @@ function getURLsFromHTML(htmlBody, baseURL){
         } else{
                 // this for absolute url
                 try{
-                  console.log("in for loop absolute",linkElement.href)
+                 //c console.log("in for loop absolute",linkElement.href)
                   const urlObj = new URL(linkElement.href)
                   urls.push(urlObj.href) 
                 }  catch(err){

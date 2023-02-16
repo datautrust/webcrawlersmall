@@ -8,7 +8,7 @@ function printReport(pages) {
     for (const sortedPage of sortedPages) {
         const url = sortedPage[0]
         const hits = sortedPage[1]
-        console.log(`Found ${hits} links to page: ${url}`)
+        //c console.log(`Found ${hits} links to page: ${url}`)
         csvContent += `Found ${hits} links to page: ${url}`+ '\n'
         
                 
